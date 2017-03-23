@@ -1,5 +1,5 @@
 {
-  "name": "hotel-platform",
+  "name": "hotel-org",
   "dependencies": {
     "webpack-dev-server": "^2.4.2",
     "babel-core": "^6.23.1",
