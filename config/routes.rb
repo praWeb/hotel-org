@@ -5,10 +5,12 @@ Rails.application.routes.draw do
 
   root 'rooms#index'
   namespace :api do
-    jsonapi_resources :rooms
-    jsonapi_resources :room_allocations
-    jsonapi_resources :payments
-    jsonapi_resources :customers
+    namespace :v1 do
+      jsonapi_resources :rooms
+      jsonapi_resources :room_allocations
+      jsonapi_resources :payments
+      jsonapi_resources :customers
+    end
   end
 
   resources :rooms

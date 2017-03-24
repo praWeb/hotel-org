@@ -1,4 +1,4 @@
-class Api::RoomAllocationResource < JSONAPI::Resource
+class Api::V1::RoomAllocationResource < JSONAPI::Resource
   attributes :checkin_in, :check_out
   has_one :payment
   has_many :customers
